@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cesaraugustocordonbalcarcel.registrosmedicos.Principal"
+    tools:backgroundTint="@color/accent_material_dark"
+    app:backgroundTint="@color/accent_material_dark"
+    android:background="@color/accent_material_dark">
+
+    <TextView
+        android:text="Bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Leer QR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/leerqr"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Nuevo Paciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leerqr"
+        android:layout_alignLeft="@+id/leerqr"
+        android:layout_alignStart="@+id/leerqr"
+        android:layout_marginTop="23dp"
+        android:id="@+id/nuevop" />
+
+    <ImageView
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        app:srcCompat="@drawable/addqr"
+        android:id="@+id/imageView"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/leerqr"
+        android:layout_toStartOf="@+id/leerqr" />
+
+    <ImageView
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        app:srcCompat="@drawable/adduser"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/leerqr"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        app:srcCompat="@drawable/registro"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <Button
+        android:text="Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registro"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        app:srcCompat="@drawable/estadisticas"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/imageView3"
+        android:layout_toLeftOf="@+id/estad"
+        android:layout_toStartOf="@+id/estad" />
+
+    <Button
+        android:text="Estadísticas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/estad"
+        android:layout_below="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+</RelativeLayout>
