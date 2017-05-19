@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent_material_dark"
+    tools:context="com.example.cesaraugustocordonbalcarcel.registrosmedicos.Codigo">
+
+    <TextView
+        android:id="@+id/lblPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paciente:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/lblEnfermedad"
+        android:layout_alignStart="@+id/lblEnfermedad"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/lblNombrePaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juanito Perez"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_alignBaseline="@+id/lblPaciente"
+        android:layout_alignBottom="@+id/lblPaciente"
+        android:layout_toRightOf="@+id/lblPaciente"
+        android:layout_toEndOf="@+id/lblPaciente" />
+
+    <TextView
+        android:id="@+id/lblEnfermedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enfermedad:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="133dp"
+        android:layout_above="@+id/lblDescripcion"
+        android:layout_toRightOf="@+id/txtEnfermedad"
+        android:layout_toEndOf="@+id/txtEnfermedad"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="61dp" />
+
+    <TextView
+        android:id="@+id/lblDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descipción: "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="209dp"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/txtDescripcion"
+        android:layout_alignLeft="@+id/lblEnfermedad"
+        android:layout_alignStart="@+id/lblEnfermedad" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblDescripcion"
+        android:layout_alignStart="@+id/lblDescripcion"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+        android:id="@+id/lblCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="372dp"
+        android:layout_below="@+id/txtDescripcion"
+        android:layout_alignLeft="@+id/txtDescripcion"
+        android:layout_alignStart="@+id/txtDescripcion"
+        android:layout_marginTop="98dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblNombrePaciente"
+        android:layout_alignStart="@+id/lblNombrePaciente"
+        android:layout_alignTop="@+id/lblEnfermedad"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblCodigo"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/lblPaciente"
+        android:layout_toRightOf="@+id/lblPaciente"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAnalizar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_toEndOf="@+id/lblEnfermedad"
+        android:layout_toRightOf="@+id/lblEnfermedad"
+        android:text="Analizar" />
+
+</RelativeLayout>

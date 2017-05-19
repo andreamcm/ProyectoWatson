@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cesaraugustocordonbalcarcel.registrosmedicos.MainActivity"
+    android:background="@color/accent_material_dark">
+
+    <TextView
+        android:id="@+id/lblDoctorWatson"
+        android:layout_width="320dp"
+        android:layout_height="212dp"
+        android:text=" Doctor Watson"
+        android:textColor="@android:color/white"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="41dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="134dp"
+        android:layout_height="85dp"
+        android:background="@android:color/white"
+        android:text="Comenzar"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="418dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp" />
+</RelativeLayout>

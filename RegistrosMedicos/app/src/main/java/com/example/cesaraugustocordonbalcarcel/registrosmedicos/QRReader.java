@@ -18,7 +18,6 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
@@ -67,6 +66,17 @@ public class QRReader extends AppCompatActivity {
 
         cameraPreview = (SurfaceView) findViewById(R.id.cameraPreview);
         txtResultado = (TextView) findViewById(R.id.txtResultado);
+
+        buscar = (Button)findViewById(R.id.button2);
+        buscar.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QRReader.this, Grabar.class);
+                intent.putExtra("micara", txtResultado.getText().toString());
+                startActivity(intent);
+            }
+        });
 
         barcodeDetector = new BarcodeDetector.Builder(this)
                 .setBarcodeFormats(Barcode.QR_CODE)
